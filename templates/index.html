@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Text-to-Speech FR</title>
+</head>
+<body>
+    <h1>Convertir du texte en voix naturelle (fr)</h1>
+    <form action="/tts" method="post">
+        <label>Texte :</label><br>
+        <textarea name="text" rows="6" cols="50">Bonjour, ceci est une démonstration.</textarea><br><br>
+
+        <label>Voix :</label>
+        <select name="voice">
+            <option value="fr-FR-DeniseNeural">Denise (F)</option>
+            <option value="fr-FR-HenriNeural">Henri (H)</option>
+        </select><br><br>
+
+        <button type="submit">Générer la voix</button>
+    </form>
+</body>
+</html>
